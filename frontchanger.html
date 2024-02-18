@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function frontChange(){
+            let newcolor = '';
+            let newfront = '';
+            let x = Math.floor(Math.random()*7);
+            switch (x) {
+                case 1:
+                    newcolor = '#ffcce7'
+                    newfront = 'Cursive'
+                    break;
+                case 2:
+                    newcolor = '#daf2dc'
+                    newfront = 'Fantasy'
+                    break;
+                case 3:
+                    newcolor = '#81b7d2'
+                    newfront = 'Serif'
+                    break;
+                case 4:
+                    newcolor = '#4d5198'
+                    newfront = 'Sans-serif'
+                    break;
+                case 5:
+                    newcolor = '#e52165'
+                    newfront = 'Verdana'
+                    break;
+                case 6:
+                    newcolor = '#0d1137'
+                    newfront = 'Candara'
+                    break;
+                case 7:
+                    newcolor = '#fbcbc9'
+                    newfront = 'Geneva'
+                    break;
+                default:
+                    break;
+            }
+            let emp = document.getElementById('logo');
+            emp.style.color = newcolor;
+            emp.style.fontFamily = newfront;
+        }
+    </script>
+</head>
+<body onclick="frontChange()">
+    <p id="logo"  class="center">ezibhai</p>
+</body>
+</html>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 400px;
+    text-align: center;
+    background-color: rgb(35, 31, 31);
+}
+.center{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+</style>
